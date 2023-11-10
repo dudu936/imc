@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Imc</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="calc-cointainer">
+        <h2>Calculadora IMC</h2>
+        <form id="calc-form">
+            <div class="form-control">
+                <label for="altura">Altura</label>
+                <input type="text" id="altura" name="altura" placeholder="Ex:1.80">
+            </div>
+            <div class="form-control">
+                <label for="peso">Peso</label>
+                <input type="text" id="peso" name="peso" placeholder="Ex:60.8">
+            </div>
+        </form>
+        <div class="buttons">
+                    <button onclick="innerResult(event)">Calcular</button>
+                    <button onclick="clean()">Limpar</button>
+        </div>
+        <div id="result-container">
+            <p id="parId">Informe um valor</p>
+        </div>
+    </div>
+</body>
+</html>
